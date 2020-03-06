@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "practicalTest": {
@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "node_modules/material-design-icons/iconfont/material-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "practicalTest"
+    }
+  },
+  "defaultProject": "practicalTest",
+  "cli": {
+    "analytics": false
+  }
 }
