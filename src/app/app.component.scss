@@ -10,11 +10,11 @@
         margin: 0 auto;
         @media only screen and (min-width: 601px) {
             width: 90%;
-        }
-
-        // @media only screen and (max-width: 600px) {
             
-        // }
+        }
+        @media only screen and (max-width: 600px) {
+            height: 100%;
+        }
         .row{
             height: 100%;
             .section{
@@ -90,8 +90,15 @@
             font-size: 11px;
             // left: 50%;
             // transform: translateX(-50%);
+            width: 49px;
             font-style: italic;
             animation: slideforward 0.4s forwards;
+        }
+        .forward{
+            animation: slideforward 0.4s forwards;
+        }
+        .backward{
+            animation: slidebackward 0.4s forwards;
         }
     }
 }

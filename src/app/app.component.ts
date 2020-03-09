@@ -26,7 +26,7 @@ export class AppComponent implements AfterViewInit{
     this.renderer.setStyle(this.wrapper.nativeElement, 'background-color', `${this.backgroundColors[imageId]}`);
     if (event) {
       if (previousTab > this.presentTab) {
-        // this.renderer.
+        
       }
     }
   }
